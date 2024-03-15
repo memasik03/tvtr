@@ -1,0 +1,172 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 900;
+  src: url(fonts/SFUIText-Heavy.ttf);
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url(fonts/SFUIText-Semibold.ttf);
+}
+
+body {
+  font-family: "San Francisco";
+  font-weight: 900;
+}
+
+.title {
+  width: 100%;
+  height: 75px;
+  background-color: #22262e;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+
+  font-family: "San Francisco";
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 3;
+  background-color: #1b1e24;
+  padding: 10px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  background-color: #22262e;
+  height: 75px;
+}
+
+.post__title {
+  width: 100%;
+  height: 50px;
+  background-color: #22262e;
+  border-radius: 25px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 0 25px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.post__title::placeholder {
+  opacity: 25%;
+  color: #fff;
+}
+
+.post__description {
+  flex-grow: 3;
+  border-radius: 25px;
+  display: flex;
+  resize: none;
+  height: 100%;
+  width: 100%;
+  background-color: #22262e;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.post__create {
+  width: 100%;
+  height: 50px;
+  background-color: #008000;
+  border-radius: 25px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 0 25px;
+  color: #fff;
+  font-size: 18px;
+}
